@@ -1,0 +1,69 @@
+.hero-section2 {
+  background-image: url("https://new-ella-demo.myshopify.com/cdn/shop/files/banner-1-compressor.jpg?v=1632456769&width=1500");
+  background-size: 100% 100%; /* Set a fixed background size to cover the entire area */
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  transition: background-size 0.5s ease-in-out; /* Add easing for a smoother transition */
+  animation: zoomOut 2s ease-in-out infinite; /* Apply a continuous zoom-out animation on hover with easing */
+}
+
+@keyframes zoomOut {
+  from {
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  to {
+    background-size: 105% 105%;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section2 {
+    animation: none; /* Stop the animation on small screens */
+  }
+}
+
+.hero-content2 {
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 50%;
+  margin-right: 10%;
+}
+
+.hero2-h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: black;
+  border-bottom: 4px solid black;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: rgb(38, 37, 37);
+  /* text-align: center; */
+}
+
+/* Add the media query for small screens (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  .hero-section2 {
+    background-size: cover; /* Change background size to 'cover' for small screens */
+  }
+
+  .hero-content2 {
+    text-align: center; /* Center align content on small screens */
+    margin-right: 0; /* Reset margin-right to center the content */
+    margin-left: 0; /* Reset margin-left to center the content */
+  }
+
+  .hero2-h1 {
+    border-bottom: none; /* Remove the border on small screens */
+  }
+}

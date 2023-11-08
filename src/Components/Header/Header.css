@@ -1,0 +1,73 @@
+
+/* header styling section 1 */
+.back{
+  
+  /* background-color: #def3f2; */
+  background: linear-gradient(to top, #def3f2, #eed4df);
+
+}
+.logo{
+margin-top: 4% !important;
+}
+.text{
+  color: #323232 !important;
+}
+.size{
+  height: 32px;
+  width: 170px;
+
+}
+.Norway{
+  width: 24px;
+  height: 24px;
+}
+.cartitem{
+  color: #323232;
+  background-color: #FFE5E8;
+  font-size: 12px;
+  margin: 0px 0px 0px 8px;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1.6px;
+
+}
+.row2{
+  padding-Left: 62%;
+  font-Size:12px;
+  color: #232323 !important;
+  font-family: ' BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif';
+  font-weight: 500 !important;
+}
+@media screen and (max-width: 997px){
+  .row2{
+    display: none;
+  }
+  .row1{
+    display: none;
+  }
+  .row3{
+    display: none;
+  }
+}
+
+.marquee1{
+  color: #b05d5d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+ margin-right: 20% !important;
+}
+
+.marquee2{
+  color: #b05d5d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+
+}
+
+

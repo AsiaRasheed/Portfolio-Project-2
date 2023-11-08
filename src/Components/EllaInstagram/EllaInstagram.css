@@ -1,0 +1,29 @@
+.insta{
+    background-color: black;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 500;
+    max-width: 230px;
+    border: 2px solid black;
+
+}
+
+.insta:hover{
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    max-width: 230px;
+}
+
+.instacard {
+    min-width: 260px; /* Adjust the value as needed */
+    min-height: max-content;
+    transition: none !important;
+    transform: none !important;
+    margin: 15px;
+  }
+.font{
+    font-family: 'DM Serif Display', serif;
+}
+  

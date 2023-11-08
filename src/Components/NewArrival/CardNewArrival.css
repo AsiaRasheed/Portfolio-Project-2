@@ -1,0 +1,108 @@
+/* newarrival */
+.with-lines {
+  position: relative;
+}
+
+.with-lines::before,
+.with-lines::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border: 1.5px solid #232323;
+  width: 30%;
+}
+
+.with-lines::before {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.with-lines::after {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .with-lines::before,
+  .with-lines::after {
+    display: none; /* Stop the animation on small screens */
+  }
+}
+
+.card1 {
+  min-width: 350px; /* Adjust the value as needed */
+  min-height: max-content;
+  background-color: #efe8e0;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2), 0 0 20px rgba(0, 255, 0, 0.2),
+    0 0 30px rgba(0, 0, 255, 0.2);
+  border: 1px solid rgb(189, 185, 185);
+}
+
+.Fimg {
+  max-height: 340px !important;
+}
+
+.cont-fluid {
+  border-bottom: 1px solid rgb(189, 185, 185);
+}
+
+.card1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.card1 .hide {
+  position: absolute;
+  bottom: 33%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(100%); /* Initially, move the button down */
+  transition: opacity 0.3s, transform 0.3s; /* Add transitions for smooth effect */
+}
+
+.card1:hover .hide {
+  opacity: 1;
+  transform: translateY(
+    0
+  ); /* On hover, move the button up to its original position */
+}
+
+.card1 .hideimg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(100%); /* Initially, move the button down */
+  transition: opacity 0.7s, transform 0.6s;
+}
+
+.card1:hover .hideimg {
+  opacity: 1;
+  transform: translateY(0);
+}
+.Arrival:hover {
+  display: flex !important;
+  justify-content: space-between !important;
+  background-color:gray;
+  color: #ffd400;
+  font-weight: 500;
+  min-width: 358px;
+}
+
+.Arrival {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffd400;;
+  border: 1px solid black;
+  color: #6c757d;
+  font-weight: 500;
+  min-width: 358px;
+}
+
+@media (max-width: 768px) {
+  .Arrival,
+  .Arrival:hover {
+    min-width: 100%;
+  }
+}

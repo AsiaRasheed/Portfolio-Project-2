@@ -1,0 +1,59 @@
+.ProdHero {
+    background: url("https://new-ella-demo.myshopify.com/cdn/shop/files/slide.jpg?v=1640742751&width=1370");
+    background-size: cover; /* Default background size */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px;
+    animation: zoomhero3 2s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+  }
+ 
+
+  @keyframes zoomhero3 {
+    from {
+      background-size: 100% 100%;
+      background-position: center;
+    }
+    to {
+      background-size: 110% 110%;
+      background-position: center 10%; /* Adjust as needed */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ProdHero{
+      background-size: 100% 100%;
+      animation: none; /* Stop the animation on small screens */
+    }
+  }
+  
+
+  .hero4btn{
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: white;
+    color: #4d8b7a;
+    border: 2px solid white;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+    max-width: 350px !important;
+    border-radius: 0px !important;
+  }
+  .hero4btn:hover{
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+    max-width: 350px !important;
+    border-radius: 0px !important;
+  }

@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* header styling section 1 */
+* {
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 4px;
+}
+
+
+
+/* nested row 2 in container-fluid-1 */
+
+/* .wishe-list div, a{
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 4px;
+  text-decoration: none;
+} */
+

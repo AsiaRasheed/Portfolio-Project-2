@@ -1,0 +1,137 @@
+.infoback {
+  background: linear-gradient(to left, #b4dbe2, #d8afc0);
+}
+
+.back-color {
+  background-color: #efe8e0;
+}
+
+.info-sideb {
+  color: rgb(66, 63, 63) !important;
+}
+.info-sideb:hover {
+  color: white !important;
+  font-size: 16px !important;
+}
+
+.contin-b {
+  background-color: black !important;
+  color: white;
+  font-weight: 600;
+}
+.contin-b:hover {
+  background-color: transparent !important;
+  color: black;
+  font-weight: 600;
+}
+
+.Readbtn {
+  background-color: transparent !important;
+  color: black;
+  font-weight: 600;
+  width: 150px !important;
+  padding: 5px;
+}
+
+.Readbtn:hover {
+  background-color: black !important;
+  color: white;
+  font-weight: 600;
+  width: 150px !important;
+  padding: 5px;
+}
+.blogcard {
+  color: #4d4b4b !important;
+}
+.blogcard:hover {
+  color: #7c7a77 !important;
+}
+
+.icon-reg {
+  color: gray;
+  font-size: 20px;
+}
+.icon-reg-name {
+  color: gray;
+  font-size: 20px;
+}
+.blogs3 {
+  font-size: 23px;
+  font-weight: 500;
+  color: #707070;
+  padding-top: 12px;
+  transition: all 0.3s;
+}
+.blogs3:hover {
+  color: #0a0a0a;
+}
+.blogsp {
+  font-size: 15px;
+  font-weight: 400;
+  color: #707070;
+}
+.blogsa {
+  font-size: 17px;
+  font-weight: 600;
+  color: #302f2e;
+}
+.card-pblog {
+  position: relative;
+}
+
+.card-sqrblog {
+  width: 40px;
+  height: 40x;
+  padding: 6px 1px;
+  font-size: 18px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+}
+.card-sqrblog:hover {
+  border: 1px solid #4c4b49;
+  background: rgba(0, 0, 0, 0.7);
+}
+.crd-idblog {
+  position: absolute;
+  text-align: center;
+  bottom: 40%;
+  left: 40%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.card-pblog:hover .crd-idblog {
+  opacity: 1;
+  -webkit-transform: translateY(-130px);
+  -moz-transform: translateY(-130px);
+  transform: translateY(-130px);
+}
+/* blog-page overlay styling */
+.blog-over2 {
+  background: linear-gradient(
+    to bottom,
+    rgba(31, 32, 34, 0) 0%,
+    rgba(31, 32, 34, 0.9) 55%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.4s;
+  transition-delay: 0.1s;
+}
+.card-pblog:hover .blog-over2 {
+  opacity: 1;
+  display: flex;
+}
