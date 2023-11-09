@@ -105,4 +105,10 @@
   .Arrival:hover {
     min-width: 100%;
   }
+  .card1{
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 300px !important;
+  }
 }
+

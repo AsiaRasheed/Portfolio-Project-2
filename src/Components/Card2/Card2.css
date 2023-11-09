@@ -32,3 +32,12 @@
     font-family:Georgia, 'Times New Roman', Times, serif
   }
   
+
+  @media (max-width: 768px) {
+    
+    .card2{
+      margin-left: 0px;
+      margin-right: 0px;
+      min-width: 300px !important;
+    }
+  }
