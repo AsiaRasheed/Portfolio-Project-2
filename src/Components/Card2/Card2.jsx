@@ -1,3 +1,5 @@
+// Card2.js
+
 import React from "react";
 import "./Card2.css";
 
@@ -21,8 +23,6 @@ const Card2 = () => {
   ];
 
   return (
-    <>
-  
     <div className="container py-5">
       <div className="row">
         {card2data.map((item, index) => (
@@ -30,6 +30,7 @@ const Card2 = () => {
             <div className="card card2">
               <div className="image-container">
                 <img src={item.image} alt="" className="image-fluid zooming-image" />
+                <div className="overlaycard2"></div>
                 <div className="centered-text fw-bold">{item.text}</div>
               </div>
             </div>
@@ -37,15 +38,9 @@ const Card2 = () => {
         ))}
       </div>
     </div>
-
-    </>
   );
 };
 
 export default Card2;
-
-
-
-
 
 

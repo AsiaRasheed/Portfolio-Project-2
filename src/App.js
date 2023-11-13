@@ -26,15 +26,12 @@ const App = () => {
 
   return (
     <div>
-     {/* <Navbar setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} /> */}
       <Routes>
-      
         <Route
           path="/"
           element={
             <>
               {" "}
-              
               <Header />
               <Navbar setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />
               <Hero />
@@ -43,9 +40,9 @@ const App = () => {
               <NewArrivalCom />
               <Hero2 />
               <Featured />
-              <Hero3/>
+              <Hero3 />
               <EllaNews />
-              <ProductHero/>
+              <ProductHero />
               <CardLogo />
               <EllaInstagram />
               <Button1 />
@@ -93,4 +90,3 @@ const App = () => {
 };
 
 export default App;
-

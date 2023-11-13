@@ -145,18 +145,18 @@
   }
 
   .right-part {
-    flex: 1; /* Both parts take full width on smaller screens */
+    flex: 1; 
   }
 }
 .left-part h3 {
-  font-size: 20px;
+  font-size: 24px;
   margin: 10px 0;
   font-weight: bold;
   text-align: left;
 }
 
 .left-part p {
-  font-size: 16px;
+  font-size: 17px;
   color: #949090;
   text-align: left;
 }
@@ -166,14 +166,14 @@
   background-color: gray;
   color: white;
   font-weight: 500;
-  max-width: 300px !important;
+  min-width: 230px !important;
   border: 2px solid gray;
 }
 .secbtn-3:hover {
   background-color: transparent;
   color: black;
   font-weight: 500;
-  max-width: 300px !important;
+  min-width: 230px !important;
   border: 2px solid black;
 }
 
@@ -214,12 +214,12 @@ img {
   padding: 30px;
 }
 
-@keyframes zoom {
+/* @keyframes zoom {
   0% {
     transform: scale(1);
   }
   100% {
-    transform: scale(1o5);
+    transform: scale(1.02);
   }
 }
 
@@ -231,7 +231,7 @@ img {
   .zooming-img-3 {
     animation: none;
   }
-}
+} */
 /* section 4 */
 
 .list-4 {

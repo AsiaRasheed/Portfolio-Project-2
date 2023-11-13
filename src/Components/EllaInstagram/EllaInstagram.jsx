@@ -59,9 +59,13 @@ const EllaInstagram = () => {
         <div className="row">
           {images.map((image, index) => (
             <div key={index} className="col-lg-3 col-md-6 col-sm-12">
-              <div className="card instacard">
-                <img src={image.image} alt="" className=" image-fluid " />
+            <div className="card instacard position-relative">
+                <img src={image.image} alt="" className="image-fluid" />
+                <div className="overlayinsta">
+                <i className="fa-brands fa-instagram fs-1 text-white"></i>
+                </div>
               </div>
+            
             </div>
           ))}
         </div>

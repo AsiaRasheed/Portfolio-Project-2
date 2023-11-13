@@ -2,22 +2,22 @@ import React from "react";
 import { Modal, ModalBody, ModalFooter, ModalHeader, Button } from "reactstrap";
 import "./Popup.css";
 import { motion } from "framer-motion";
+
 function Popup({ modal, toggle, product }) {
   return (
     <>
-      <Modal isOpen={modal} toggle={toggle}>
-        {/* <ModalHeader className="bg-light">
-          <h2 className="text-center">Product Detail</h2>
-        </ModalHeader> */}
+      <Modal isOpen={modal} toggle={toggle} className="model">
+        <ModalHeader className="pop-head">
+          {product.category}
+          <button className="close-icon" onClick={toggle}>
+            &times;
+          </button>
+        </ModalHeader>
         <ModalBody className="bg-light pop-back">
-          <img className="popimg" src={product.image} />
+          <img className="popimg" src={product.image} alt={product.title} />
           <p className="pdata">
-            <spna className="ptitle">Title: </spna>
+            <span className="ptitle">Title: </span>
             {product.title}
-          </p>
-          <p className="pdata">
-            <spna className="pcatagoryy">Category: </spna>
-            {product.category}
           </p>
           <p className="pdata">
             <span className="pdescription">Description: </span>
@@ -33,7 +33,7 @@ function Popup({ modal, toggle, product }) {
             transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
             className="pbtn"
           >
-            Add to card
+            Add to cart
           </motion.button>
         </ModalBody>
 
@@ -54,3 +54,4 @@ function Popup({ modal, toggle, product }) {
 }
 
 export default Popup;
+

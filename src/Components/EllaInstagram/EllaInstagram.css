@@ -1,29 +1,50 @@
-.insta{
-    background-color: black;
-    color: white;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-weight: 500;
-    max-width: 230px;
-    border: 2px solid black;
-
+.insta {
+  background-color: black;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 500;
+  max-width: 230px;
+  border: 2px solid black;
 }
 
-.insta:hover{
-    background-color: transparent;
-    color: black;
-    font-weight: 500;
-    max-width: 230px;
+.insta:hover {
+  background-color: transparent;
+  color: black;
+  font-weight: 500;
+  max-width: 230px;
 }
 
 .instacard {
-    min-width: 260px; /* Adjust the value as needed */
-    min-height: max-content;
-    transition: none !important;
-    transform: none !important;
-    margin: 15px;
-  }
-.font{
-    font-family: 'DM Serif Display', serif;
+  min-width: 260px;
+  min-height: max-content;
+  transition: none !important;
+  transform: none !important;
+  margin: 15px;
 }
-  
+.font {
+  font-family: "DM Serif Display", serif;
+}
+
+.instacard {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlayinsta {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 137, 191, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.instacard:hover .overlayinsta {
+  opacity: 1;
+}

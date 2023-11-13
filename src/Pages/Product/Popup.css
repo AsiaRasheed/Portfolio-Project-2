@@ -1,63 +1,78 @@
-.pop-back{
-    background: linear-gradient(to bottom, #b4dbe2, #d8afc0)
+.model {
+  min-width: 45%;
+}
+.pop-head {
+  background: linear-gradient(to bottom, #b4dbe2, #d8afc0);
+  color: red;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-style: italic;
+}
+.pop-back {
+  background: linear-gradient(to bottom, #b4dbe2, #d8afc0);
 }
 
-.pop-foot{
-    background: linear-gradient(to left, #b4dbe2, #d8afc0)
+.pop-foot {
+  background: linear-gradient(to left, #b4dbe2, #d8afc0);
 }
-.popimg{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.ptitle{
-    font-weight: bold;
-    color: black;
+.popimg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-.pprice{
-    font-weight: 700;
-    color: rgb(16, 15, 15);
+.ptitle {
+  font-weight: bold;
+  color: black;
 }
 
-
-.pdata{
-    color:rgb(59, 56, 56);
-    font-weight: 500;
-    
-}
-.pdescription{
-    color:rgb(16, 15, 15);
-    font-weight: 700;
-    
-}
-.pcatagoryy{
-    font-weight: 700;
-    color: rgb(16, 15, 15);
+.pprice {
+  font-weight: 700;
+  color: rgb(16, 15, 15);
 }
 
-
+.pdata {
+  color: rgb(59, 56, 56);
+  font-weight: 500;
+}
+.pdescription {
+  color: rgb(16, 15, 15);
+  font-weight: 700;
+}
+.pcatagoryy {
+  font-weight: 700;
+  color: rgb(16, 15, 15);
+}
 
 .pbtn {
-    cursor: pointer;
-    background-color: transparent;
-    color: black;
-    font-weight: 500;
-    max-width: 250px !important;
-    border: 2px solid black;
-    margin-top: 5%;
-    padding: 2%;
-  }
-  .pbtn:hover {
-    cursor: pointer;
-    background-color: black;
-    border: 2px solid black;
-    color: white;
-    font-weight: 500;
-    max-width: 250px !important;
-    margin-top: 5%;
-    padding: 2%;
-  }
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  font-weight: 500;
+  max-width: 250px !important;
+  border: 2px solid black;
+  margin-top: 5%;
+  padding: 2%;
+}
+.pbtn:hover {
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  font-weight: 500;
+  max-width: 250px !important;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.close-icon {
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 13px;
+}
