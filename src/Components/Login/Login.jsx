@@ -5,18 +5,19 @@ import * as Yup from "yup";
 
 function Login({ setIsLoggedIn }) {
   const [error, setError] = useState(null);
+   // Initial form values
   const initialValues = {
     username: "",
     password: "",
   };
-
+// Form validation schema using Yup
   const validationSchema = Yup.object().shape({
     username: Yup.string().required("Username is required"),
     password: Yup.string().required("Password is required"),
   });
 
   const handleLogin = (values) => {
-    // Simulate a login with username and password
+    //  login with username and password
     if (values.username === "user" && values.password === "password") {
       setIsLoggedIn(true);
       // Store user information in local storage

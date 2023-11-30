@@ -1,14 +1,3 @@
-@keyframes zoomAndParallax {
-  from {
-    background-size: 100% 100%;
-    background-position: center;
-  }
-  to {
-    background-size: 110% 110%;
-    background-position: center 10%; /* Adjust as needed */
-  }
-}
-
 .hero-section {
   background-image: url("https://new-ella-demo.myshopify.com/cdn/shop/files/slideshow-1.jpg?v=1632195167&width=1370");
   background-size: 100% 100%;
@@ -21,6 +10,16 @@
   text-align: left;
   padding: 20px;
   animation: zoomAndParallax 2s linear infinite;
+}
+@keyframes zoomAndParallax {
+  from {
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  to {
+    background-size: 110% 110%;
+    background-position: center 10%; /* Adjust as needed */
+  }
 }
 @media (max-width: 768px) {
   .hero-section {
@@ -66,7 +65,6 @@ p {
   max-width: 230px !important;
 }
 
-/* Add the media query for small screens (adjust the max-width as needed) */
 @media (max-width: 768px) {
   .hero-section {
     background-size: cover;

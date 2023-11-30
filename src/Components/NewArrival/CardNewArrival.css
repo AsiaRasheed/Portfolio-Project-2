@@ -2,7 +2,6 @@
 .with-lines {
   position: relative;
 }
-
 .with-lines::before,
 .with-lines::after {
   content: "";
@@ -25,7 +24,7 @@
 @media (max-width: 768px) {
   .with-lines::before,
   .with-lines::after {
-    display: none; /* Stop the animation on small screens */
+    display: none; 
   }
 }
 
@@ -84,7 +83,7 @@
 .Arrival:hover {
   display: flex !important;
   justify-content: space-between !important;
-  background-color:gray;
+  background-color: gray;
   color: #ffd400;
   font-weight: 500;
   min-width: 358px;
@@ -93,7 +92,7 @@
 .Arrival {
   display: flex;
   justify-content: space-between;
-  background-color: #ffd400;;
+  background-color: #ffd400;
   border: 1px solid black;
   color: #6c757d;
   font-weight: 500;
@@ -105,10 +104,9 @@
   .Arrival:hover {
     min-width: 100%;
   }
-  .card1{
+  .card1 {
     margin-left: 0px;
     margin-right: 0px;
     min-width: 300px !important;
   }
 }
-

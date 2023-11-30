@@ -1,6 +1,10 @@
 /* Style for the container */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
+
+.cartpage{
+  background: linear-gradient(to top, #c2dfe5, #d8afc0);
+}
 .productback {
   background: linear-gradient(to left, #c2dfe5, #d8afc0);
 }

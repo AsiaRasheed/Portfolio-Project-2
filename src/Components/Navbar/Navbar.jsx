@@ -1,6 +1,13 @@
-import React from "react";
+import React , { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getCartTotal } from "../../features/cartSlice";
+import {
+ 
+  MDBBtn
+} from "mdb-react-ui-kit";
+
 const Navbar = ({ setIsLoggedIn, isLoggedIn }) => {
   const navigate = useNavigate();
   // Function to handle logout and redirection
@@ -8,6 +15,15 @@ const Navbar = ({ setIsLoggedIn, isLoggedIn }) => {
     setIsLoggedIn(false); // Clear the login status
     navigate("/login"); // Redirect to the login page
   };
+
+  const { cart, totalQuantity } = useSelector((state) => state.allCart);
+
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getCartTotal());
+  }, [cart]);
+
 
   return (
     <div>
@@ -83,6 +99,8 @@ const Navbar = ({ setIsLoggedIn, isLoggedIn }) => {
                 )}
               </li>
             </ul>
+            <NavLink  className="nav-link fw-bold text-white fs-5 px-4" to="/cart"><i class="fa-solid fa-cart-shopping cart px-1 fs-5"></i>({totalQuantity})</NavLink>
+           
           </div>
         </div>
       </nav>

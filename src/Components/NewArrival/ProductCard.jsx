@@ -8,10 +8,10 @@ const ProductCard = ({ product }) => {
       <div className="card card1">
         <motion.img
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, rotateY: 360 }}
-          transition={{ delay: 1, duration: 1 }}
+          animate={{ opacity: 1, rotateY: 180 }}
+          transition={{ delay: 2, duration: 1 }}
           src={product.imgSrc}
-          className="image-fluid Fimg zooming-image"
+          className="image-fluid Fimg "
           alt="..."
         />
         <img

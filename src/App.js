@@ -21,6 +21,7 @@ import EllaNews from "./Components/EllaNews/EllaNews";
 import ImgSection from "./Components/ImgSection/ImgSection";
 import Hero3 from "./Components/Hero3/Hero3";
 import ProductHero from "./Components/ProductHero/ProductHero";
+import CartPage from "../src/Components/cartPage"
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -84,6 +85,7 @@ const App = () => {
         <Route path="/About" element={<About />} />
         <Route path="/Blogpage" element={<Blogpage />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
     </div>
   );

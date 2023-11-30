@@ -1,9 +1,11 @@
 import React from "react";
-import { Modal, ModalBody, ModalFooter, ModalHeader, Button } from "reactstrap";
+import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 import "./Popup.css";
 import { motion } from "framer-motion";
-
+import {useDispatch } from "react-redux";
+import { addToCart } from "../../features/cartSlice";
 function Popup({ modal, toggle, product }) {
+  const dispatch = useDispatch();
   return (
     <>
       <Modal isOpen={modal} toggle={toggle} className="model">
@@ -32,6 +34,7 @@ function Popup({ modal, toggle, product }) {
             animate={{ x: 0 }}
             transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
             className="pbtn"
+            onClick={() => dispatch(addToCart(product))}
           >
             Add to cart
           </motion.button>
